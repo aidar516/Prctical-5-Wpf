@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="CalendarApp.ButtonControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CalendarApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="100">
+    <DockPanel>
+        <Button x:Name="DayBtn" Click="DayBtn_Click">
+            <Button.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="TextBlock" FontSize="18" HorizontalAlignment="Center"/>
+                    <Image x:Name="IMG" Grid.Row="1"/>
+                </Grid>
+            </Button.Content>
+        </Button>
+    </DockPanel>
+</UserControl>
