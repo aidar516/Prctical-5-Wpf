@@ -19,7 +19,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Button x:Name="PrevBtn" Content="Пред" Grid.Column="0" FontSize="30" Height="48" Grid.RowSpan="2" VerticalAlignment="Top" Click="PrevBtn_Click"/>
-        <DatePicker x:Name="DatePicker" Grid.Column="1" FontSize="30"/>
+        <DatePicker x:Name="DatePicker" Grid.Column="1" FontSize="30" SelectedDateChanged="DtPc"/>
         <Button x:Name="NextBtn" Content="След" Grid.Column="2" FontSize="30" Click="NextBtn_Click"/>
         <WrapPanel x:Name="MainContent" Grid.Row="1" Grid.ColumnSpan="3">
             

@@ -24,7 +24,6 @@ namespace CalendarApp
         {
             InitializeComponent();
             SelectionItems();
-            
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)

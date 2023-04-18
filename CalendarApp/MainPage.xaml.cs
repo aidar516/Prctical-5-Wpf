@@ -10,6 +10,7 @@ namespace CalendarApp
 {
     public partial class MainPage : Page
     {
+        public DateTime picker;
         public MainPage()
         {
             InitializeComponent();
@@ -18,12 +19,12 @@ namespace CalendarApp
         }
         private void NextBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            DatePicker.SelectedDate = ((DateTime)DatePicker.SelectedDate).AddMonths(1);
         }
 
         private void PrevBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            DatePicker.SelectedDate = ((DateTime)DatePicker.SelectedDate).AddMonths(-1);
         }
 
         private void SecondPageBtn_Click(object sender, RoutedEventArgs e)
@@ -51,6 +52,11 @@ namespace CalendarApp
                 button.IMG.Source = new BitmapImage(uri);
                 MainContent.Children.Add(button);
             }
+        }
+
+        private void DtPc(object sender, SelectionChangedEventArgs e)
+        {
+            buttonBlock();
         }
     }
 }

@@ -19,7 +19,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Button x:Name="ExitBtn" Content="Назад" FontSize="30" Click="ExitBtn_Click"/>
-        <DatePicker x:Name="Picker" Grid.Column="1" FontSize="30"/>
+        <DatePicker x:Name="Picker"  Grid.Column="1" FontSize="30"/>
         <ListBox x:Name="ListBox" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Button x:Name="SaveExitBtn" Grid.Row="2" Grid.ColumnSpan="2" FontSize="30" Content="Сохранить и выйти" Click="SaveExitBtn_Click"/>
     </Grid>
